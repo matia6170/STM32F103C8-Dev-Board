@@ -60,11 +60,7 @@
           "width": 0.3
         }
       ],
-      "drc_exclusions": [
-        "unconnected_items|122145000|79275000|279d6a4f-7953-43ff-b0e6-45645c586d9d|da2e199e-cf02-426a-ab93-58577296289a",
-        "unconnected_items|122145000|86725000|da2e199e-cf02-426a-ab93-58577296289a|296b4957-58f2-4be3-9046-52566fc068ae",
-        "unconnected_items|125945000|79125000|13f0a709-85ba-45c6-ba68-48b39fc8df53|279d6a4f-7953-43ff-b0e6-45645c586d9d"
-      ],
+      "drc_exclusions": [],
       "meta": {
         "version": 2
       },
