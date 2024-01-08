@@ -2,14 +2,14 @@
 <export version="E">
   <design>
     <source>/Users/matia/Projects/KiCAD/STM32F103C8T6/STM32F103C8T6.kicad_sch</source>
-    <date>Saturday, January 06, 2024 at 04:34:02 PM</date>
+    <date>Saturday, January 06, 2024 at 06:59:59 PM</date>
     <tool>Eeschema 7.0.9</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
         <title>STM32F103C8T6 Basic PCB</title>
         <company>Matia's Lab</company>
-        <rev>0.1</rev>
-        <date>2024-01-01</date>
+        <rev>0.2</rev>
+        <date>2024-01-06</date>
         <source>STM32F103C8T6.kicad_sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
@@ -26,7 +26,7 @@
   <components>
     <comp ref="C1">
       <value>10u</value>
-      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="STM32F103C8T6.kicad_sch"/>
@@ -180,7 +180,7 @@
     </comp>
     <comp ref="FB1">
       <value>120R</value>
-      <footprint>Inductor_SMD:L_0603_1608Metric</footprint>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
       <libsource lib="Device" part="FerriteBead" description="Ferrite bead"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="STM32F103C8T6.kicad_sch"/>
@@ -234,15 +234,41 @@
       <tstamps>8bedbcd0-d1ab-4b46-a5a5-da93dfb6fe96</tstamps>
     </comp>
     <comp ref="J1">
-      <value>USB_B_Micro</value>
-      <footprint>Connector_USB:USB_Micro-B_Wuerth_629105150521</footprint>
-      <libsource lib="Connector" part="USB_B_Micro" description="USB Micro Type B connector"/>
+      <value>MICROXNJ</value>
+      <footprint>project_footprints:SHOUHAN_MICROXNJ</footprint>
+      <fields>
+        <field name="Availability">Not in stock</field>
+        <field name="Check_prices">https://www.snapeda.com/parts/MICROXNJ/Shouhan/view-part/?ref=eda</field>
+        <field name="Description">
+Sensor Cables / Actuator Cables
+</field>
+        <field name="MANUFACTURER">SHOUHAN</field>
+        <field name="MAXIMUM_PACKAGE_HEIGHT">3mm</field>
+        <field name="MF">Shouhan</field>
+        <field name="MP">MICROXNJ</field>
+        <field name="PARTREV">A</field>
+        <field name="Package">Package</field>
+        <field name="Price">None</field>
+        <field name="STANDARD">Manufacturer Recommendations</field>
+        <field name="SnapEDA_Link">https://www.snapeda.com/parts/MICROXNJ/Shouhan/view-part/?ref=snap</field>
+      </fields>
+      <libsource lib="MICROXNJ" part="MICROXNJ" description=""/>
+      <property name="MF" value="Shouhan"/>
+      <property name="MAXIMUM_PACKAGE_HEIGHT" value="3mm"/>
+      <property name="Package" value="Package"/>
+      <property name="Price" value="None"/>
+      <property name="Check_prices" value="https://www.snapeda.com/parts/MICROXNJ/Shouhan/view-part/?ref=eda"/>
+      <property name="STANDARD" value="Manufacturer Recommendations"/>
+      <property name="PARTREV" value="A"/>
+      <property name="SnapEDA_Link" value="https://www.snapeda.com/parts/MICROXNJ/Shouhan/view-part/?ref=snap"/>
+      <property name="MP" value="MICROXNJ"/>
+      <property name="Description" value="&#xA;Sensor Cables / Actuator Cables&#xA;"/>
+      <property name="Availability" value="Not in stock"/>
+      <property name="MANUFACTURER" value="SHOUHAN"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="STM32F103C8T6.kicad_sch"/>
-      <property name="ki_description" value="USB Micro Type B connector"/>
-      <property name="ki_keywords" value="connector USB micro"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>658bfb43-bcb1-4544-8fd9-5bff3ee6b616</tstamps>
+      <tstamps>9d6108aa-6007-4ab5-a497-03e80327eabf</tstamps>
     </comp>
     <comp ref="J2">
       <value>Conn_01x04_Pin</value>
@@ -398,26 +424,6 @@
         <pin num="4" name="Pin_4" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="Connector" part="USB_B_Micro">
-      <description>USB Micro Type B connector</description>
-      <docs>~</docs>
-      <footprints>
-        <fp>USB*</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">J</field>
-        <field name="Value">USB_B_Micro</field>
-        <field name="Datasheet">~</field>
-      </fields>
-      <pins>
-        <pin num="1" name="VBUS" type="power_out"/>
-        <pin num="2" name="D-" type="bidirectional"/>
-        <pin num="3" name="D+" type="bidirectional"/>
-        <pin num="4" name="ID" type="passive"/>
-        <pin num="5" name="GND" type="power_out"/>
-        <pin num="6" name="Shield" type="passive"/>
-      </pins>
-    </libpart>
     <libpart lib="Device" part="C">
       <description>Unpolarized capacitor</description>
       <docs>~</docs>
@@ -567,6 +573,40 @@
         <pin num="48" name="VDD" type="power_in"/>
       </pins>
     </libpart>
+    <libpart lib="MICROXNJ" part="MICROXNJ">
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">MICROXNJ</field>
+        <field name="Footprint">MICROXNJ:SHOUHAN_MICROXNJ</field>
+        <field name="MF">Shouhan</field>
+        <field name="MAXIMUM_PACKAGE_HEIGHT">3mm</field>
+        <field name="Package">Package</field>
+        <field name="Price">None</field>
+        <field name="Check_prices">https://www.snapeda.com/parts/MICROXNJ/Shouhan/view-part/?ref=eda</field>
+        <field name="STANDARD">Manufacturer Recommendations</field>
+        <field name="PARTREV">A</field>
+        <field name="SnapEDA_Link">https://www.snapeda.com/parts/MICROXNJ/Shouhan/view-part/?ref=snap</field>
+        <field name="MP">MICROXNJ</field>
+        <field name="Description">
+Sensor Cables / Actuator Cables
+</field>
+        <field name="Availability">Not in stock</field>
+        <field name="MANUFACTURER">SHOUHAN</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VBUS" type="power_in"/>
+        <pin num="2" name="D-" type="bidirectional"/>
+        <pin num="3" name="D+" type="bidirectional"/>
+        <pin num="4" name="ID" type="bidirectional"/>
+        <pin num="5" name="GND" type="power_in"/>
+        <pin num="S1" name="SHIELD" type="passive"/>
+        <pin num="S2" name="SHIELD" type="passive"/>
+        <pin num="S3" name="SHIELD" type="passive"/>
+        <pin num="S4" name="SHIELD" type="passive"/>
+        <pin num="S5" name="SHIELD" type="passive"/>
+        <pin num="S6" name="SHIELD" type="passive"/>
+      </pins>
+    </libpart>
     <libpart lib="Mechanical" part="MountingHole">
       <description>Mounting Hole without connection</description>
       <docs>~</docs>
@@ -621,6 +661,9 @@
     </library>
     <library logical="MCU_ST_STM32F1">
       <uri>/Applications/KiCad/KiCad.app/Contents/SharedSupport/symbols//MCU_ST_STM32F1.kicad_sym</uri>
+    </library>
+    <library logical="MICROXNJ">
+      <uri>/Users/matia/Projects/KiCAD/STM32F103C8T6/project_symbols/MICROXNJ.kicad_sym</uri>
     </library>
     <library logical="Mechanical">
       <uri>/Applications/KiCad/KiCad.app/Contents/SharedSupport/symbols//Mechanical.kicad_sym</uri>
@@ -737,7 +780,7 @@
       <node ref="C7" pin="2" pintype="passive"/>
       <node ref="C8" pin="2" pintype="passive"/>
       <node ref="C9" pin="2" pintype="passive"/>
-      <node ref="J1" pin="5" pinfunction="GND" pintype="power_out"/>
+      <node ref="J1" pin="5" pinfunction="GND" pintype="power_in"/>
       <node ref="J2" pin="4" pinfunction="Pin_4" pintype="passive"/>
       <node ref="J3" pin="4" pinfunction="Pin_4" pintype="passive"/>
       <node ref="J4" pin="4" pinfunction="Pin_4" pintype="passive"/>
@@ -753,14 +796,19 @@
     </net>
     <net code="18" name="VBUS">
       <node ref="C12" pin="1" pintype="passive"/>
-      <node ref="J1" pin="1" pinfunction="VBUS" pintype="power_out"/>
+      <node ref="J1" pin="1" pinfunction="VBUS" pintype="power_in"/>
       <node ref="U2" pin="3" pinfunction="VI" pintype="power_in"/>
     </net>
     <net code="19" name="unconnected-(J1-ID-Pad4)">
-      <node ref="J1" pin="4" pinfunction="ID" pintype="passive+no_connect"/>
+      <node ref="J1" pin="4" pinfunction="ID" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="20" name="unconnected-(J1-Shield-Pad6)">
-      <node ref="J1" pin="6" pinfunction="Shield" pintype="passive+no_connect"/>
+    <net code="20" name="unconnected-(J1-SHIELD-PadS1)">
+      <node ref="J1" pin="S1" pinfunction="SHIELD" pintype="passive+no_connect"/>
+      <node ref="J1" pin="S2" pinfunction="SHIELD" pintype="passive+no_connect"/>
+      <node ref="J1" pin="S3" pinfunction="SHIELD" pintype="passive+no_connect"/>
+      <node ref="J1" pin="S4" pinfunction="SHIELD" pintype="passive+no_connect"/>
+      <node ref="J1" pin="S5" pinfunction="SHIELD" pintype="passive+no_connect"/>
+      <node ref="J1" pin="S6" pinfunction="SHIELD" pintype="passive+no_connect"/>
     </net>
     <net code="21" name="unconnected-(U1-PA0-Pad10)">
       <node ref="U1" pin="10" pinfunction="PA0" pintype="bidirectional+no_connect"/>
